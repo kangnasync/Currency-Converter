@@ -29,7 +29,7 @@ Currency-Converter/
 │
 ├── index.html
 ├── style.css
-├── script.js
+├── index.js
 ├── codes.js
 └── README.md
 ```
