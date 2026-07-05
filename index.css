@@ -21,7 +21,7 @@ form{
 }
 form select,button,input{
 width:100%;
-border: none;
+border:none;
 outline:none;
 border-radius: 0.75rem;
 }
