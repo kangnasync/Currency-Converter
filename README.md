@@ -36,7 +36,7 @@ Currency-Converter/
 
 Live Demo
 
-https://kangnagupta1225.github.io/Currency-Converter/
+https://kangnasync.github.io/Currency-Converter/
 
 How to Run
 
