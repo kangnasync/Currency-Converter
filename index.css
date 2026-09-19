@@ -38,33 +38,51 @@ width:40vh;
 min-height:45vh;
 }
 
-#theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width:45px;
-    height:45px;
-    background: none;
-    border: none;
-    border-radius: 50%;
-    background:#e5e5e7;
-    color: #111;
-    font-size: 20px;
+#themeToggle {
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+
+    left: auto !important;
+    bottom: auto !important;
+
+    width: 55px !important;
+    height: 55px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: none !important;
+    border-radius: 50% !important;
+
+    background-color: var(--button-bg) !important;
+    color: var(--button-text) !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 24px !important;
+
     cursor: pointer;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: background 0.3s ease, color 0.3s ease, transform 0.2 ease;
-} 
-#theme-toggle:hover {
-transform: scale(1.08);
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+    z-index: 99999;
+
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
 }
 
-#theme-toggle:active {
+#themeToggle:hover {
+    transform: scale(1.08);
+}
+
+#themeToggle:active {
     transform: scale(0.95);
 }
-
 
 /*#themeToggle {
     position: fixed !important;
