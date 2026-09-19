@@ -22,7 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height:100vh;
-    background-color:#f4e4ba;
+    background-color:#f4e4baee;
 }
 .maha-container{
     min-height:100vh;
@@ -32,7 +32,7 @@ body{
     align-items: center;
 }
 .container{
-background-color:rgba(255, 255, 0, 0.8);
+background-color:#fff;
 padding:2rem;
 border-radius:1rem;
 width:40vh;
