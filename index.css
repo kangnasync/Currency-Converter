@@ -22,10 +22,9 @@ body{
     justify-content: center;
     align-items: center;
     min-height:100vh;
-    background-color:#f4e4baee;
+    background-color:#f2d07bec;
 }
 .maha-container{
-    min-height:100vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
