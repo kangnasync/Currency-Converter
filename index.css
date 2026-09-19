@@ -1,4 +1,4 @@
-:root {
+/*:root {
     --bg-color: #f5f5f7;
     --calculator-bg: #ffffff;
     --display-color: #111111;
@@ -12,30 +12,70 @@ body.dark {
     --display-color: #ffffff;
     --button-bg: #333333;
     --button-text: #ffffff;
+}*/
+:root {
+    --page-bg: #f8e7b5;
+    --converter-bg: #ffffff;
+    --text-color: #000000;
+}
+
+body.dark {
+    --page-bg: #111111;
+    --converter-bg: #1c1c1e;
+    --text-color: #ffffff;
 }
 *{
     margin:0;
     padding:0;   
 }
-body{
+/*body{
     display:flex;
     justify-content: center;
     align-items: center;
     min-height:100vh;
     background-color:#f2d07bec;
+}*/
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: var(--page-bg);
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .maha-container{
+    min-height:100vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.container{
+/*.container{
 background-color:#fff;
 padding:2rem;
 border-radius:1rem;
 width:40vh;
 min-height:45vh;
+}*/
+
+.converter {
+    width: 400px;
+    max-width: 90%;
+    padding: 40px;
+    box-sizing: border-box;
+
+    background: var(--converter-bg);
+    color: var(--text-color);
+
+    border-radius: 20px;
+
+    margin: 0 auto;
 }
 
 #themeToggle {
