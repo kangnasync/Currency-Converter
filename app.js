@@ -55,3 +55,12 @@ let amount=document.querySelector(".amount input");
     let finalAmt=amtVal*rate;
     mssg.innerText=`${amtVal} ${fromCurr.value}=${finalAmt.toFixed(2)} ${toCurr.value}`
 }
+const themeToggle = document.getElementById("theme-toggle");
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains("dark")) {
+        themeToggle.textContent = "☀️";
+    } else {
+        themeToggle.textContent = "🌙";
+    }
+});
