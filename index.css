@@ -89,6 +89,34 @@ feedback-section {
     transform: scale(0.97);
 }
 
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width:45px;
+    height:45px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    background:#e5e5e7;
+    color: #111;
+    font-size: 20px;
+    cursor: pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2 ease;
+}
+
+#theme-toggle:hover {
+transform: scale(1.08);
+}
+
+#theme-toggle:active {
+    transform: scale(0.95);
+}
+
 form{
     margin:2rem 0 1rem 0;
 }
