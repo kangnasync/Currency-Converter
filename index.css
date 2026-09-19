@@ -38,7 +38,7 @@ width:40vh;
 min-height:45vh;
 }
 
-#themeToggle {
+#theme-toggle {
     position: fixed !important;
     top: 20px !important;
     right: 20px !important;
