@@ -1,6 +1,7 @@
 :root {
     --bg-color: #f5f5f7;
-    --calculator-bg: #ffffff;
+    --text-color: #111111;
+    --converter-bg: #ffffff;
     --display-color: #111111;
     --button-bg: #e5e5e7;
     --button-text: #000000;
@@ -8,7 +9,8 @@
 
 body.dark {
     --bg-color: #000000;
-    --calculator-bg: #1c1c1e;
+    --text-color: #ffffff;
+    --converter-bg: #1c1c1e;
     --display-color: #ffffff;
     --button-bg: #333333;
     --button-text: #ffffff;
@@ -22,7 +24,10 @@ body{
     justify-content: center;
     align-items: center;
     min-height:100vh;
-    background-color:#f7ce65ef;
+    /* background-color:#f7ce65ef; */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
 }
 .maha-container{
     display:flex;
@@ -31,11 +36,13 @@ body{
     align-items: center;
 }
 .container{
-background-color:#ffffff;
+/* background-color:#ffffff; */
+background-color: var(--converter-bg);
 padding:2rem;
 border-radius:1rem;
 width:40vh;
 min-height:45vh;
+color:#111111;
 }
 
 #theme-toggle {
