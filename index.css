@@ -24,8 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height:100vh;
-    /* background-color:#f7ce65ef; */
-    background-color: var(--bg-color);
+    background-color:#e8d095ef; 
     color: var(--text-color);
     transition: background-color 0.3s ease;
 }
@@ -42,7 +41,7 @@ padding:2rem;
 border-radius:1rem;
 width:40vh;
 min-height:45vh;
-color:#111111;
+color:(--text-color);
 }
 
 #theme-toggle {
