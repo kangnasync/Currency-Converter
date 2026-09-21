@@ -1,5 +1,5 @@
-const BASE_URL="https://open.er-api.com/v6/latest/";
-
+//const BASE_URL="https://open.er-api.com/v6/latest/";
+const BASE_URL="https://api.frankfurter.dev/v2/rate/USD/INR";
 const dropdowns=document.querySelectorAll(".dropdown select");
 const btn=document.querySelector("form button");
 const fromCurr=document.querySelector(".from select");
