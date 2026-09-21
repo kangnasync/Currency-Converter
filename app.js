@@ -55,6 +55,41 @@ let amount=document.querySelector(".amount input");
     let finalAmt=amtVal*rate;
     mssg.innerText=`${amtVal} ${fromCurr.value}=${finalAmt.toFixed(2)} ${toCurr.value}`
 }
+
+async function getExchangeRate(from, to) {
+    try {
+        const response = await fetch(
+            `https://api.frankfurter.dev/v2/rate/${from}/${to}`
+        );
+
+        const data = await response.json();
+
+        // Show the date provided by the API
+        document.getElementById("last-updated").textContent =
+            `Last updated: ${formatDate(data.date)}`;
+
+        return data.rate;
+
+    } catch (error) {
+        console.error("Error fetching exchange rate:", error);
+
+        document.getElementById("last-updated").textContent =
+            "Last updated: Unable to fetch";
+
+        return null;
+    }
+}
+
+function formatDate(dateString) {
+    const date = new Date(dateString);
+
+    return date.toLocaleDateString("en-IN", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric"
+    });
+}
+
 const themeToggle = document.getElementById("theme-toggle");
 themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
