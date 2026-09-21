@@ -191,3 +191,9 @@ font-size:1.15rem;
 cursor:pointer;
 width:100%;
 }
+.last-updated {
+    font-size: 13px;
+    color: #888;
+    margin-top: 8px;
+    text-align: center;
+}
