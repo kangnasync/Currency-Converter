@@ -17,6 +17,8 @@ Technologies Used
 - CSS3
 - JavaScript (ES6)
 - Exchange Rate API
+- Git & Github
+- Github Pages
 
 Screenshot
 
@@ -29,7 +31,7 @@ Currency-Converter/
 │
 ├── index.html
 ├── style.css
-├── index.js
+├── app.js
 ├── codes.js
 └── README.md
 ```
