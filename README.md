@@ -23,6 +23,7 @@ Technologies Used
 Screenshot
 
 ![Currency Converter Screenshot](Screenshot-1.png)
+![Currency Converter Screenshot2](CurrencyConverter/Updatedscreenshot.png)
 
 Project Structure
 
